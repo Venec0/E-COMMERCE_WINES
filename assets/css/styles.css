@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+IE:wght@100..400&display=swap');
 
 .nav-buttons {
-    margin-left: 50%
+    margin-left: 50%;
 }
 
 * {
@@ -15,8 +15,10 @@ html, body {
     overflow: hidden;
 }
 
-body{
-    font-family: 'Montserrat', 'sans-serif';
+body {
+    font-family: 'Playwrite AU VIC', cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 h1 {
@@ -48,6 +50,25 @@ h6 {
     color: #D8D8D8;
 }
 
+button {
+    font-size: 0.8rem;
+    font-weight: 900;
+    background-color: transparent;
+    border: 2px solid white !important;
+    outline: 2px solid white !important;
+    color: white;
+    padding: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: white !important;
+    color: black !important;
+    outline: white !important;
+}
+
 .navbar {
     font-size: 16px;
     padding-top: 2rem !important;
@@ -56,16 +77,14 @@ h6 {
     left: 0;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     padding: 0 20px;
-    color: #000;
+    color: white;
     transition: 0.4s ease;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar i:hover,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar i:hover{
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
     color: red;
 }
 
@@ -76,6 +95,11 @@ h6 {
     font-weight: 600;
     cursor: pointer;
     margin-left: 5px;
+    color: white;
+}
+
+.navbar i:hover {
+    color: red;
 }
 
 #home {
@@ -93,6 +117,6 @@ h6 {
     color: white;
 }
 
-#home h5{
-    color: rgb(155, 0, 0);
+#home h5 {
+    color: rgb(219, 0, 0);
 }
