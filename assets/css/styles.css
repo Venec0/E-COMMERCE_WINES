@@ -10,11 +10,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    overflow: hidden;
-}
-
 body {
     font-family: 'Playwrite AU VIC', cursive;
     font-optical-sizing: auto;
@@ -54,19 +49,18 @@ button {
     font-size: 0.8rem;
     font-weight: 900;
     background-color: transparent;
-    border: 2px solid white !important;
-    outline: 2px solid white !important;
+    border: 2px solid white;
     color: white;
     padding: 13px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 button:hover {
-    background-color: white !important;
-    color: black !important;
-    outline: white !important;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
 }
 
 .navbar {
@@ -100,6 +94,25 @@ button:hover {
 
 .navbar i:hover {
     color: red;
+}
+
+@media only screen and (max-width:990px){
+
+    .nav-buttons{
+        margin: 10px;
+    }
+
+    .nav-buttons ul {
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-buttons ul .fas{
+        margin: 20px 5px 10px 20px;
+    }
+
 }
 
 #home {
