@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+IE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 .nav-buttons {
     margin-left: 50%;
@@ -10,8 +11,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
-    font-family: 'Playwrite AU VIC', cursive;
+    font-family: 'Poppins', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -119,10 +124,11 @@ button:hover {
     background-image: url(../imgs/Copy_of_Red_Wine_Blog_Post_Header.png);
     margin-top: 10px;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     background-size: cover;
-    background-position-x: 90px;
+    background-position-x: center;
     background-position-y: 80px;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,6 +136,124 @@ button:hover {
     color: white;
 }
 
-#home h5 {
+#home span {
     color: rgb(219, 0, 0);
+}
+
+#brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#brand img {
+    max-width: 20%;
+    height: auto;
+    margin: 0 50px;
+}
+
+#new .one img {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new .one {
+    position: relative;
+}
+
+#new .one .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.8;
+    background-color: rgb(37, 37, 37, 0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#new .one:hover .details {
+    background-color: rgb(1, 1, 1);
+}
+
+#new .one .details h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#new .one .details button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    align-self: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#new .one .details button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+/*PRODUCTO*/
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img {
+    transition: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.7;
+}
+
+#banner {
+    background-image: url(../imgs/Copy_of_Red_Wine_Blog_Post_Header.png);
+    margin-top: 10px;
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 80px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+#banner h1 {
+    color: white;
+}
+
+#banner button {
+    background-color: transparent;
+    color: white;
+}
+
+#banner button:hover{
+    background-color: white;
+    color: black;
 }
